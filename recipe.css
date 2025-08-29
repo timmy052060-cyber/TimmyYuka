@@ -61,8 +61,9 @@ h1 {
     margin: 20px 0;
     font-size: 25px;
     font-weight: bold;
-    position: relative;
-    left: -73px;
+    /* position: absolute; */
+    /* left: -73px;
+    z-index: 1; */
 }
 
 .Xmas {
@@ -87,13 +88,8 @@ h1 {
 }
 .Xmas h2 {
     margin: 20px 0;
-    position: relative;
-    left: -70px;
 }
-.Xmas p {
-    position: relative;
-    left: -48px;
-}
+
 
 .puff {
     display: flex;
@@ -117,12 +113,6 @@ h1 {
 }
 .puff h2 {
     margin: 20px 0;
-    position: relative;
-    left: -70px;
-}
-.puff p {
-    position: relative;
-    left: -8px;
 }
 
 .space {
@@ -194,8 +184,24 @@ h1 {
         display: flex;
         flex-direction: column;
         margin: 10px 10px 0 10px;
+        z-index: 5;
     }
     .nav_menu.active {
         left:0; top: 70px;
+    }
+    .Tiramisu{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 30px 0;
+    }
+    .Xmas{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 30px 0;
+    }
+    .puff{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 30px 0;
     }
 }
