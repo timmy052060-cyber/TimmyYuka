@@ -191,12 +191,17 @@ footer {
     }
     .intro p {
         position: relative;
-        top: -50px
+        top: -50px;
+        left: -120px;
+    }
+    .intro h3 {
+        position: relative;
+        left: -45px
     }
     .intro {
         height: 520px;
     }
-    .img2 img {
+    .intro img {
         max-block-size: none;
         height: 200px; width:180px;
     }
