@@ -14,7 +14,8 @@ header a {
     transition: 0.5s ease;
 }
 header a:hover {
-    color:rgba(255, 253, 127, 0.76) ;
+    color:rgba(248, 245, 34, 0.76) ;
+    font-size: 105%;
     /* text-decoration: underline; */
 }
 header li {
@@ -125,14 +126,15 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav_menu {
-        position: fixed;
+        display: fixed;
         font-size: 20px;
         top: -300px;
         flex-direction: column;
-        background-color: #616060;
+        background-color: #02052e;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.4s;
+        left:0;
     }
     .nav_item {
         display: flex;
@@ -140,6 +142,7 @@ footer {
         margin: 10px 10px 0 10px;
     }
     .nav_menu.active {
-        left:0; top: 70px;
+        top: 70px;left: 0;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
     }
 }

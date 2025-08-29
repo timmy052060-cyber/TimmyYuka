@@ -5,7 +5,7 @@
 
 header {
     background-color: #363636;
-    height: 80px;
+    height: 67px;
     width: 100%;
     position: fixed;
 }
@@ -15,7 +15,8 @@ header a {
     transition: 0.5s ease;
 }
 header a:hover {
-    color:rgba(255, 253, 127, 0.76) ;
+    color:rgba(248, 245, 34, 0.76) ;
+    font-size: 105%;
     /* text-decoration: underline; */
 }
 header li {
@@ -34,7 +35,8 @@ h1 {
     position: absolute;
     left: 120px;
     top: 0px;
-    line-height: 80px;
+    line-height: 70px;
+    font-size: 25px;
 }
 
 .Tiramisu {
@@ -116,8 +118,9 @@ h1 {
 }
 
 .space {
-    height: 8vh;
+    height: 9vh;
 }
+
 
 /* ------------burger------------ */
 .burger {
@@ -156,7 +159,7 @@ h1 {
         color: white;
         font-size: 45px;
         position: absolute;
-        top: 25px; left: 20px;
+        top: 20px; left: 20px;
         border: none;
         cursor: pointer;
      }
@@ -174,11 +177,11 @@ h1 {
         font-size: 20px;
         top: -300px;
         flex-direction: column;
-        background-color: #616060;
+        background-color: #02052e;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        z-index: 5;
+        left: 0;
     }
     .nav_item {
         display: flex;
@@ -187,7 +190,8 @@ h1 {
         z-index: 5;
     }
     .nav_menu.active {
-        left:0; top: 70px;
+        left:0; top: 67px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
     }
     .Tiramisu{
         display: flex;

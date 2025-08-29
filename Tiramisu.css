@@ -15,7 +15,8 @@ header a {
     transition: 0.5s ease;
 }
 header a:hover {
-    color:rgba(255, 253, 127, 0.76) ;
+    color:rgba(248, 245, 34, 0.76) ;
+    font-size: 105%;
     /* text-decoration: underline; */
 }
 header li {
@@ -111,6 +112,9 @@ p {
     justify-content: center;
     transition: background-image 1s ease-in-out;
 }
+.nike {
+    margin-right: 25px;
+}
 
 /* ------------burger------------ */
 .burger {
@@ -167,17 +171,21 @@ p {
         font-size: 20px;
         top: -300px;
         flex-direction: column;
-        background-color: #616060;
+        background-color: #02052e;
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        left:0;
     }
     .nav_item {
         display: flex;
         flex-direction: column;
         margin: 10px 10px 0 10px;
+        border-bottom: 1px solid rgb(11, 0, 114);
+        border-width: 1px;
     }
     .nav_menu.active {
         left:0; top: 70px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
     }
 }
