@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #363636;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+header a {
+    color:white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+header a:hover {
+    color:rgba(255, 253, 127, 0.76) ;
+    /* text-decoration: underline; */
+}
+header li {
+    display:inline;
+    margin-right: 4vw;
+}
+header ul {
+    position:absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    line-height: 80px;
+}
+
+.Tiramisu {
+    display: flex;
+    background-color: #ede9db;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 18;
+}
+.Tiramisu div {
+    width:300px;
+    text-align: center;
+
+}
+.Tiramisu img {
+    width: 370px;
+    height: 300px;
+    margin: 18px;
+    border-radius: 5px;
+    background-color: #dddacf;
+    box-shadow: 5px 5px 10px gray;
+}
+.word {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: -73px;
+}
+
+.Xmas {
+    display: flex;
+    /* background-color: #ede9db; */
+    justify-content: center;
+    align-items: center;
+    padding: 100px 18;
+}
+.Xmas div {
+    width:300px;
+    text-align: center;
+
+}
+.Xmas img {
+    width: 370px;
+    height: 300px;
+    margin: 18px;
+    border-radius: 5px;
+    background-color: #dddacf;
+    box-shadow: 5px 5px 10px gray;
+}
+.Xmas h2 {
+    margin: 20px 0;
+    position: relative;
+    left: -70px;
+}
+.Xmas p {
+    position: relative;
+    left: -48px;
+}
+
+.puff {
+    display: flex;
+    background-color: #ede9db;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 18;
+}
+.puff div {
+    width:300px;
+    text-align: center;
+
+}
+.puff img {
+    width: 370px;
+    height: 300px;
+    margin: 18px;
+    border-radius: 5px;
+    background-color: #dddacf;
+    box-shadow: 5px 5px 10px gray;
+}
+.puff h2 {
+    margin: 20px 0;
+    position: relative;
+    left: -70px;
+}
+.puff p {
+    position: relative;
+    left: -8px;
+}
+
+.space {
+    height: 8vh;
+}
+
+/* ------------burger------------ */
+.burger {
+    display: none;
+}
+.bar {
+    display: block;
+    width:25px; height: 3px; margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+/* ------------------------------ */
+/* 響應式css */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .Pic h2 {
+        position: inherit;
+        font-size: 40px;
+        display: flex;
+        align-items: center; justify-content: center;
+    }
+    .Pic p {
+        position: inherit;
+        font-size: 20px;
+        display: flex;
+        align-items: center; justify-content: center;
+    }
+     .burger {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 45px;
+        position: absolute;
+        top: 25px; left: 20px;
+        border: none;
+        cursor: pointer;
+     }
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav_menu {
+        position: fixed;
+        font-size: 20px;
+        top: -300px;
+        flex-direction: column;
+        background-color: #616060;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    .nav_item {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 0 10px;
+    }
+    .nav_menu.active {
+        left:0; top: 70px;
+    }
+}
