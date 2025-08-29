@@ -182,9 +182,23 @@ footer {
         display: flex;
         align-items: center; justify-content: center;
     }
+    .img1 img {
+        max-block-size: none;
+        height: 200px; width:180px;
+    }
+    .img1 {
+        height: 220px;
+    }
+    .intro p {
+        position: relative;
+        top: -50px
+    }
+    .intro {
+        height: 520px;
+    }
     .img2 img {
         max-block-size: none;
-        height: 350px; width:250px;
+        height: 200px; width:180px;
     }
    
      .burger {
