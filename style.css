@@ -81,7 +81,7 @@ h1 {
     box-shadow: 5px 5px 5px gray;
 }
 .intro {
-    height: 1360px;
+    height: 1300px;
 }
 .img1 {
     display: flex;
@@ -110,8 +110,15 @@ h1 {
 }
 .img1 {
     display: flex;
-    height: 400px;
+    height: 370px;
     padding: 20px 20px 20px 20px;
+}
+.dash {
+    display: block;
+    width:1500px; height: 2px; margin: 5px auto;
+    background-color: #e9d7ae;
+    position: relative;
+    top: -8px; left: -150px;
 }
 .img2 {
     display: flex;
@@ -173,12 +180,13 @@ h1 {
     box-shadow: 0 5px 5px 9px gray;
 }
 .bridge3 p {
+    color:#7a6f56;
     font-size: 20px;
     font-weight: 500;
     display: flex;
     align-items: center; justify-content: center;
     position: relative;
-    top: 50px;
+    top: 23px;
 }
 
 footer {
@@ -228,7 +236,12 @@ footer {
         height: 200px; width:180px;
     }
     .img1 {
-        height: 220px;
+        height: 240px;
+    }
+    .dash {
+        position: relative;
+        top: -6px; left: 0px;
+        width:450px; height: 2px; margin: 5px auto;
     }
     .intro p {
         position: relative;
@@ -253,7 +266,7 @@ footer {
         display: flex;
         align-items: center; justify-content: center;
         position: relative;
-        top: 50px; left: 0px;
+        top: 25px; left: 0px;
     }
    
      .burger {
