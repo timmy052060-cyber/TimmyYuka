@@ -241,7 +241,7 @@ footer {
     .dash {
         position: relative;
         top: -6px; left: 0px;
-        width:450px; height: 2px; margin: 5px auto;
+        width:300px; height: 2px; margin: 5px auto;
     }
     .intro p {
         position: relative;
